@@ -8,6 +8,6 @@ public class Enum {
         } else {
             System.out.println("Придется попотеть");
         }
-
+// орорывомиы
     }
 }
