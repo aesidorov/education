@@ -1,38 +1,64 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class MatchTeam {
 
 
+
+public static void main(String[] args) {
+
 //Задача выбрать в команду игроков, которые играют за каждый клуб более 3 лет
-    public static void main(String[] args) {
-        List<Players> player = getPlayers();
-        System.out.println(player);
-        List<Players> mustExperiencePlayer = new ArrayList<>();
-        System.out.println(mustExperiencePlayer);                               // <------------------- не совсем понимаю почему тут выводится пустой массив?
+//        List<Players> player = getPlayers();
+//        System.out.println(player);
+//        List<Players> mustExperiencePlayer = new ArrayList<>();
+//        System.out.println(mustExperiencePlayer);                               // <------------------- не совсем понимаю почему тут выводится пустой массив?
+//
+//
+//
+//        List<OpponentPlayers> opponentPlayer = getOpponentPlayers();
+//        System.out.println(opponentPlayer);
+//        List<OpponentPlayers> mustExperienceOpponentPlayers = new ArrayList<>();
+//
+//
+//        for (Players temp : player) {
+//            if (temp.getCountgamesToClub() > 20) {
+//                mustExperiencePlayer.add(temp);
+//                System.out.println(mustExperiencePlayer);
+//            }
+//        }
+//
+//
+//        for (OpponentPlayers opponentTemp : opponentPlayer) {
+//            if (opponentTemp.getCountgamesToClub() > 20) {
+//                mustExperienceOpponentPlayers.add(opponentTemp);
+//            }
+//        }
+//        System.out.println(mustExperienceOpponentPlayers);
+//    }
 
 
+    Set<String> player = new HashSet<>();
+    player.add("Угальде");
+    player.add("Николсон");
+    player.add("Барко");
+    player.add("Зиньковский");
+    player.add("Игнатов");
 
-        List<OpponentPlayers> opponentPlayer = getOpponentPlayers();
-        System.out.println(opponentPlayer);
-        List<OpponentPlayers> mustExperienceOpponentPlayers = new ArrayList<>();
-
-
-        for (Players temp : player) {
-            if (temp.getCountgamesToClub() > 20) {
-                mustExperiencePlayer.add(temp);
-                System.out.println(mustExperiencePlayer);
-            }
+    for (String temp : player) {
+        if (temp.equals("Игнатов")){
+            System.out.println("Динамо арендовали игрока Спартака");
+            break;
         }
-
-
-        for (OpponentPlayers opponentTemp : opponentPlayer) {
-            if (opponentTemp.getCountgamesToClub() > 20) {
-                mustExperienceOpponentPlayers.add(opponentTemp);
-            }
-        }
-        System.out.println(mustExperienceOpponentPlayers);
+        
     }
+
+    Map<String, Integer> opponents = new HashMap<>();
+    opponents.put("Лунёв", 20);
+    opponents.put("Лещук", 4);
+    opponents.put("Лунёв", 15);
+    opponents.put("Скопинцев", 2);
+    System.out.println(opponents);
+
+}
 
 
     private static List<Players> getPlayers () {
@@ -67,3 +93,4 @@ public class MatchTeam {
         return opponentPlayers;
     }
 }
+
