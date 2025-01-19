@@ -1,3 +1,5 @@
+package oldLesson;
+
 public class FootbalRole {
 
 //Описание объекта

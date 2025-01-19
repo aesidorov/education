@@ -1,3 +1,5 @@
+package oldLesson;
+
 public class Team {
 
     private String country;
@@ -28,5 +30,10 @@ public class Team {
 
     public void setPlayInClub(int playInClub) {
         this.playInClub = playInClub;
+    }
+
+    @Override
+    public String toString(){
+        return "oldLesson.Team = " + country + ", playInClub = " + playInClub;
     }
 }

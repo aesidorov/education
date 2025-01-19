@@ -1,3 +1,5 @@
+package oldLesson;
+
 public enum FootbalRoleList {
     players,
     captain,

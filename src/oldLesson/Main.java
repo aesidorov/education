@@ -1,5 +1,6 @@
+package oldLesson;
+
 import java.util.Arrays;
-import java.util.Collections;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -35,7 +36,7 @@ public class Main {
         coachs[2] = new Team("Brazilia", 180);
 
         System.out.println("Количество тренеров = " + coachs.length);
-        System.out.println(Arrays.asList(coachs));  //                                                              <-------------- выводит не значение, а хэши
+        System.out.println(Arrays.toString(coachs));  //                                                              <-------------- выводит не значение, а хэши
 
 //TODO - не понимаю почему не работет вывод массива - строчка выше
 

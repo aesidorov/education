@@ -1,3 +1,5 @@
+package oldLesson;
+
 public enum CountryList {
     EuropeanUnion,
     Italy,
